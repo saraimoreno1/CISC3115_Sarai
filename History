@@ -1,0 +1,16 @@
+227  cat hw1.txt
+  228  cd javacode/
+  229  ls
+  230  vi HelloWorld.java
+  231  ls
+  232  pwd
+  233  cd ..
+  234  pwd
+  235  ls
+  236  cd /c/Users/Student/Downloads/CISC3115_Sarai/javacode/
+  237  mkdir javacode
+  238  cd /c/Users/Student/Downloads/CISC3115_Sarai/javacode/
+  239  history
+  240  ls
+  241  ls -1
+  242  history 
