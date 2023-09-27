@@ -1,0 +1,57 @@
+import java.util.*;
+public class ImmutableObject {
+    public static void main(String[] args) {
+      
+        System.out.println("The for loop: ");
+        for (double i = 0.0; i <= 40.0; i += 4) {
+            double centigrade = (i - 32) * 5 / 9;
+            System.out.println("When fahrenheit is " + i + " centigrade is " + centigrade);
+        }
+      
+        System.out.println("The while loop: ");
+        double k = 0.0;
+        while (k <= 40.0) {
+            double centigrade = (k - 32) * 5 / 9;
+
+            System.out.println("When fahrenheit is " + k + " centigrade is " + centigrade);
+            k += 4;
+        }
+
+       stopChecking();
+    }
+
+    public static void stopChecking() {
+        Scanner scan = new Scanner(System.in);
+
+        String[][] myArray = {
+                {"BMW", "Ferrari", "Lambo"},
+                {"pizza", "burger", "dumpling"}
+        };
+        String isIn;
+
+        System.out.print("Enter a word: ");
+        String inputWords = scan.next();
+
+        if (inputWords.equals("STOP")) {
+            System.out.println("now terminated");
+            System.exit(0);
+        } else {
+            isIn = "false";
+
+            for (String[] arr : myArray) {
+                for (String item : arr) {
+                    if (item.equals(inputWords)) {
+                        isIn = "True";
+                        break;
+                    }
+                }
+            }
+
+            if (isIn.equals("True")) {
+                System.out.println(inputWords + " is in the 2D array");
+            } else {
+                System.out.println(inputWords + " is not in the 2D array.");
+            }
+        }
+    }
+}
